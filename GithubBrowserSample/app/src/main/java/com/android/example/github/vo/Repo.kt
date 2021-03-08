@@ -19,6 +19,7 @@ package com.android.example.github.vo
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.Index
+import com.android.example.github.R
 import com.google.gson.annotations.SerializedName
 
 /**
@@ -56,4 +57,6 @@ data class Repo(
     companion object {
         const val UNKNOWN_ID = -1
     }
+
+    val textAppearance: Int get() = if (stars > 1000) R.style.AppCapsStyle else R.style.RegularStyle
 }

@@ -40,6 +40,7 @@
 
             <TextView
                 android:text="@{showFullName ? repo.fullName : repo.name}"
+                android:textAppearance="@{repo.textAppearance}"
                 android:layout_width="368dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/name"
